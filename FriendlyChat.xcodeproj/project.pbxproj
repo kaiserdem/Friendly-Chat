@@ -13,6 +13,7 @@
 		AD1BA7DB2312EC8C00AF2F4F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1BA7DA2312EC8C00AF2F4F /* LoginVC.swift */; };
 		AD1BA7DE2312ED2D00AF2F4F /* InsertTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1BA7DD2312ED2D00AF2F4F /* InsertTextField.swift */; };
 		AD1BA7E02312F85400AF2F4F /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1BA7DF2312F85400AF2F4F /* ShadowView.swift */; };
+		AD1BA7E22312FAA200AF2F4F /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1BA7E12312FAA200AF2F4F /* AuthService.swift */; };
 		AD6208A22312D32700134AB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6208A12312D32700134AB1 /* AppDelegate.swift */; };
 		AD6208A42312D32700134AB1 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6208A32312D32700134AB1 /* FirstViewController.swift */; };
 		AD6208A62312D32700134AB1 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6208A52312D32700134AB1 /* SecondViewController.swift */; };
@@ -29,6 +30,7 @@
 		AD1BA7DA2312EC8C00AF2F4F /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		AD1BA7DD2312ED2D00AF2F4F /* InsertTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertTextField.swift; sourceTree = "<group>"; };
 		AD1BA7DF2312F85400AF2F4F /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		AD1BA7E12312FAA200AF2F4F /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		AD62089E2312D32700134AB1 /* FriendlyChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriendlyChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD6208A12312D32700134AB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD6208A32312D32700134AB1 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				AD1BA7D62312D66D00AF2F4F /* DataService.swift */,
+				AD1BA7E12312FAA200AF2F4F /* AuthService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				AD1BA7DE2312ED2D00AF2F4F /* InsertTextField.swift in Sources */,
 				AD1BA7D92312EBE400AF2F4F /* AuthVC.swift in Sources */,
 				AD6208A62312D32700134AB1 /* SecondViewController.swift in Sources */,
+				AD1BA7E22312FAA200AF2F4F /* AuthService.swift in Sources */,
 				AD1BA7DB2312EC8C00AF2F4F /* LoginVC.swift in Sources */,
 				AD1BA7E02312F85400AF2F4F /* ShadowView.swift in Sources */,
 				AD6208A22312D32700134AB1 /* AppDelegate.swift in Sources */,
