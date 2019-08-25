@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		18D7B2FAA2F5FE41612C9A85 /* Pods_FriendlyChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C0E4641C3F02A8A79D00DDA /* Pods_FriendlyChat.framework */; };
 		AD1BA7D72312D66D00AF2F4F /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1BA7D62312D66D00AF2F4F /* DataService.swift */; };
+		AD1BA7D92312EBE400AF2F4F /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1BA7D82312EBE400AF2F4F /* AuthVC.swift */; };
+		AD1BA7DB2312EC8C00AF2F4F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1BA7DA2312EC8C00AF2F4F /* LoginVC.swift */; };
+		AD1BA7DE2312ED2D00AF2F4F /* InsertTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1BA7DD2312ED2D00AF2F4F /* InsertTextField.swift */; };
+		AD1BA7E02312F85400AF2F4F /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1BA7DF2312F85400AF2F4F /* ShadowView.swift */; };
 		AD6208A22312D32700134AB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6208A12312D32700134AB1 /* AppDelegate.swift */; };
 		AD6208A42312D32700134AB1 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6208A32312D32700134AB1 /* FirstViewController.swift */; };
 		AD6208A62312D32700134AB1 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6208A52312D32700134AB1 /* SecondViewController.swift */; };
@@ -21,6 +25,10 @@
 /* Begin PBXFileReference section */
 		7C0E4641C3F02A8A79D00DDA /* Pods_FriendlyChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FriendlyChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD1BA7D62312D66D00AF2F4F /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		AD1BA7D82312EBE400AF2F4F /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
+		AD1BA7DA2312EC8C00AF2F4F /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		AD1BA7DD2312ED2D00AF2F4F /* InsertTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertTextField.swift; sourceTree = "<group>"; };
+		AD1BA7DF2312F85400AF2F4F /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		AD62089E2312D32700134AB1 /* FriendlyChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FriendlyChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD6208A12312D32700134AB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD6208A32312D32700134AB1 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +71,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		AD1BA7DC2312ECF000AF2F4F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD1BA7DD2312ED2D00AF2F4F /* InsertTextField.swift */,
+				AD1BA7DF2312F85400AF2F4F /* ShadowView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		AD6208952312D32700134AB1 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +101,7 @@
 		AD6208A02312D32700134AB1 /* FriendlyChat */ = {
 			isa = PBXGroup;
 			children = (
+				AD1BA7DC2312ECF000AF2F4F /* View */,
 				AD6208B82312D3B200134AB1 /* Services */,
 				AD6208B72312D38F00134AB1 /* Extensions */,
 				AD6208B62312D38600134AB1 /* Model */,
@@ -103,6 +121,8 @@
 			children = (
 				AD6208A32312D32700134AB1 /* FirstViewController.swift */,
 				AD6208A52312D32700134AB1 /* SecondViewController.swift */,
+				AD1BA7D82312EBE400AF2F4F /* AuthVC.swift */,
+				AD1BA7DA2312EC8C00AF2F4F /* LoginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -245,7 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD1BA7DE2312ED2D00AF2F4F /* InsertTextField.swift in Sources */,
+				AD1BA7D92312EBE400AF2F4F /* AuthVC.swift in Sources */,
 				AD6208A62312D32700134AB1 /* SecondViewController.swift in Sources */,
+				AD1BA7DB2312EC8C00AF2F4F /* LoginVC.swift in Sources */,
+				AD1BA7E02312F85400AF2F4F /* ShadowView.swift in Sources */,
 				AD6208A22312D32700134AB1 /* AppDelegate.swift in Sources */,
 				AD6208A42312D32700134AB1 /* FirstViewController.swift in Sources */,
 				AD1BA7D72312D66D00AF2F4F /* DataService.swift in Sources */,
@@ -402,7 +426,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kaiserdem.FriendlyChat;
+				PRODUCT_BUNDLE_IDENTIFIER = kaiserdem.NotificationsTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -421,7 +445,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kaiserdem.FriendlyChat;
+				PRODUCT_BUNDLE_IDENTIFIER = kaiserdem.NotificationsTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
