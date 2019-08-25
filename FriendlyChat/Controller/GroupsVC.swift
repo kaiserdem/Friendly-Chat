@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  GroupsVC.swift
 //  FriendlyChat
 //
 //  Created by Kaiserdem on 25.08.2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class GroupsVC: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()

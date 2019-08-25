@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  FeedVC.swift
 //  FriendlyChat
 //
 //  Created by Kaiserdem on 25.08.2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class FeedVC: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
