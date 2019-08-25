@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>725499554416-8lovk62690bolg3ri3df70sn874hf324.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.725499554416-8lovk62690bolg3ri3df70sn874hf324</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAQjIPoE3aT3V3zh5apsTe8rrw26ndmK6c</string>
+	<key>GCM_SENDER_ID</key>
+	<string>725499554416</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>kaiserdem.FriendlyChat</string>
+	<key>PROJECT_ID</key>
+	<string>friendlychat-b2921</string>
+	<key>STORAGE_BUCKET</key>
+	<string>friendlychat-b2921.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:725499554416:ios:7b6b53de57a98ace</string>
+	<key>DATABASE_URL</key>
+	<string>https://friendlychat-b2921.firebaseio.com</string>
+</dict>
+</plist>
