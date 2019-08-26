@@ -28,6 +28,9 @@
                                             <constraint firstAttribute="width" constant="30" id="yO5-XH-c8h"/>
                                         </constraints>
                                         <state key="normal" image="compose"/>
+                                        <connections>
+                                            <segue destination="Tbx-EN-4pm" kind="presentation" id="4VE-eQ-uVi"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_feed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMk-3C-IMv">
                                         <rect key="frame" x="160" y="34.5" width="55" height="21"/>
@@ -266,21 +269,21 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oGG-d9-6YW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1423" y="0.0"/>
+            <point key="canvasLocation" x="1526" y="0.0"/>
         </scene>
-        <!--View Controller-->
+        <!--Create PostVC-->
         <scene sceneID="tos-GC-RnZ">
             <objects>
-                <viewController id="Tbx-EN-4pm" sceneMemberID="viewController">
+                <viewController id="Tbx-EN-4pm" customClass="CreatePostVC" customModule="FriendlyChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5X1-2I-WqZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="27X-1b-XpW">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                <rect key="frame" x="0.0" y="0.0" width="348" height="70"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="_post_something" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32e-oa-hML">
-                                        <rect key="frame" x="97.5" y="29.5" width="180" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_post_something" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32e-oa-hML">
+                                        <rect key="frame" x="90" y="29.5" width="180" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="Lh6-g3-M4C"/>
                                             <constraint firstAttribute="width" constant="180" id="RU8-Hg-xcF"/>
@@ -297,14 +300,17 @@
                                         </constraints>
                                         <state key="normal" image="close"/>
                                         <connections>
+                                            <action selector="closeBtnWasPressed:" destination="Tbx-EN-4pm" eventType="touchUpInside" id="VqK-NU-Md4"/>
                                             <action selector="singInOutWasPressed:" destination="3NM-IY-0m3" eventType="touchUpInside" id="6hL-pR-ZZP"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.25490196079999999" green="0.27058823529999998" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="32e-oa-hML" secondAttribute="trailing" constant="40" id="Gb4-yC-4OD"/>
                                     <constraint firstItem="ce0-Qa-COi" firstAttribute="leading" secondItem="27X-1b-XpW" secondAttribute="leading" constant="20" id="Q7S-Pc-atv"/>
                                     <constraint firstAttribute="bottom" secondItem="ce0-Qa-COi" secondAttribute="bottom" constant="15" id="W6i-tt-puH"/>
+                                    <constraint firstItem="32e-oa-hML" firstAttribute="leading" secondItem="ce0-Qa-COi" secondAttribute="trailing" constant="40" id="dco-Mz-G8T"/>
                                     <constraint firstAttribute="height" constant="70" id="jpA-QR-zC7"/>
                                     <constraint firstItem="32e-oa-hML" firstAttribute="centerY" secondItem="ce0-Qa-COi" secondAttribute="centerY" id="m5R-OV-r6s"/>
                                 </constraints>
@@ -317,7 +323,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="user@friendluChat.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjC-9z-NOU">
-                                <rect key="frame" x="100" y="109.5" width="255" height="21"/>
+                                <rect key="frame" x="100" y="109.5" width="228" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="LuY-Jw-dau"/>
                                 </constraints>
@@ -326,14 +332,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Say something here..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="kIH-Xn-4L3">
-                                <rect key="frame" x="20" y="170" width="335" height="427"/>
+                                <rect key="frame" x="20" y="170" width="308" height="427"/>
                                 <color key="backgroundColor" red="0.16078431369999999" green="0.16862745100000001" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bd7-9z-woA">
-                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <rect key="frame" x="0.0" y="617" width="348" height="50"/>
                                 <color key="backgroundColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Pki-Cx-7Fq"/>
@@ -342,6 +348,9 @@
                                     <color key="titleColor" red="0.3026612401008606" green="0.74744349718093872" blue="0.33463144302368164" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="sendBtnWasPressed:" destination="Tbx-EN-4pm" eventType="touchUpInside" id="53d-Xz-38I"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.16078431369999999" green="0.16862745100000001" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -364,10 +373,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PLA-56-yym"/>
                     </view>
+                    <connections>
+                        <outlet property="emailLabel" destination="tjC-9z-NOU" id="QdF-gR-9d8"/>
+                        <outlet property="profileImage" destination="Aqa-HA-G9N" id="z4g-Qg-gGe"/>
+                        <outlet property="sendBtn" destination="bd7-9z-woA" id="H3N-v3-rD4"/>
+                        <outlet property="textView" destination="kIH-Xn-4L3" id="HE9-7N-o3b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="upU-QS-6cN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1421.5999999999999" y="-663.41829085457277"/>
+            <point key="canvasLocation" x="1527" y="-663"/>
         </scene>
         <!--AuthVC-->
         <scene sceneID="U6Z-Qb-EYm">
