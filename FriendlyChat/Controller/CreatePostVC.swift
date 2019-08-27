@@ -21,6 +21,9 @@ class CreatePostVC: UIViewController {
         super.viewDidLoad()
 
       textView.delegate = self
+      sendBtn.bindToKeyboard()
+    //  profileImage.bindToKeyboard()
+    //  textView.bindToKeyboard()
     }
     
 
