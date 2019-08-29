@@ -28,6 +28,7 @@
 		ADFCD55D23179A9D0083C748 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFCD55C23179A9D0083C748 /* Message.swift */; };
 		ADFCD55F2317F5F40083C748 /* CreateGroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFCD55E2317F5F40083C748 /* CreateGroupVC.swift */; };
 		ADFCD5612317FCB40083C748 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFCD5602317FCB40083C748 /* UserCell.swift */; };
+		ADFCD5632318263B0083C748 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFCD5622318263B0083C748 /* GroupCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		ADFCD55C23179A9D0083C748 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		ADFCD55E2317F5F40083C748 /* CreateGroupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupVC.swift; sourceTree = "<group>"; };
 		ADFCD5602317FCB40083C748 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		ADFCD5622318263B0083C748 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
 		B60BABC6E8D92AE0C202670A /* Pods-FriendlyChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendlyChat.debug.xcconfig"; path = "Target Support Files/Pods-FriendlyChat/Pods-FriendlyChat.debug.xcconfig"; sourceTree = "<group>"; };
 		BDC97E69F0BEEF0134CF456F /* Pods-FriendlyChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendlyChat.release.xcconfig"; path = "Target Support Files/Pods-FriendlyChat/Pods-FriendlyChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,6 +97,7 @@
 				AD1BA7DF2312F85400AF2F4F /* ShadowView.swift */,
 				ADFCD55A231796510083C748 /* FeedCell.swift */,
 				ADFCD5602317FCB40083C748 /* UserCell.swift */,
+				ADFCD5622318263B0083C748 /* GroupCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -120,11 +123,11 @@
 		AD6208A02312D32700134AB1 /* FriendlyChat */ = {
 			isa = PBXGroup;
 			children = (
-				AD1BA7DC2312ECF000AF2F4F /* View */,
 				AD6208B82312D3B200134AB1 /* Services */,
-				AD6208B72312D38F00134AB1 /* Extensions */,
 				AD6208B62312D38600134AB1 /* Model */,
+				AD1BA7DC2312ECF000AF2F4F /* View */,
 				AD6208B52312D37C00134AB1 /* Controller */,
+				AD6208B72312D38F00134AB1 /* Extensions */,
 				AD6208A12312D32700134AB1 /* AppDelegate.swift */,
 				AD6208AA2312D32800134AB1 /* Assets.xcassets */,
 				AD6208AC2312D32800134AB1 /* LaunchScreen.storyboard */,
@@ -292,6 +295,7 @@
 				AD3ED1EA23131A4F00AAF679 /* MeVC.swift in Sources */,
 				ADFCD55B231796510083C748 /* FeedCell.swift in Sources */,
 				AD1BA7DE2312ED2D00AF2F4F /* InsertTextField.swift in Sources */,
+				ADFCD5632318263B0083C748 /* GroupCell.swift in Sources */,
 				AD1BA7D92312EBE400AF2F4F /* AuthVC.swift in Sources */,
 				AD6208A62312D32700134AB1 /* GroupsVC.swift in Sources */,
 				AD1BA7E22312FAA200AF2F4F /* AuthService.swift in Sources */,
