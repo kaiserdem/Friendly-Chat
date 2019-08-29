@@ -29,6 +29,7 @@
 		ADFCD55F2317F5F40083C748 /* CreateGroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFCD55E2317F5F40083C748 /* CreateGroupVC.swift */; };
 		ADFCD5612317FCB40083C748 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFCD5602317FCB40083C748 /* UserCell.swift */; };
 		ADFCD5632318263B0083C748 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFCD5622318263B0083C748 /* GroupCell.swift */; };
+		ADFCD565231831160083C748 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFCD564231831160083C748 /* Group.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		ADFCD55E2317F5F40083C748 /* CreateGroupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupVC.swift; sourceTree = "<group>"; };
 		ADFCD5602317FCB40083C748 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		ADFCD5622318263B0083C748 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
+		ADFCD564231831160083C748 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		B60BABC6E8D92AE0C202670A /* Pods-FriendlyChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendlyChat.debug.xcconfig"; path = "Target Support Files/Pods-FriendlyChat/Pods-FriendlyChat.debug.xcconfig"; sourceTree = "<group>"; };
 		BDC97E69F0BEEF0134CF456F /* Pods-FriendlyChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendlyChat.release.xcconfig"; path = "Target Support Files/Pods-FriendlyChat/Pods-FriendlyChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				ADFCD55C23179A9D0083C748 /* Message.swift */,
+				ADFCD564231831160083C748 /* Group.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				AD1BA7E22312FAA200AF2F4F /* AuthService.swift in Sources */,
 				AD1BA7DB2312EC8C00AF2F4F /* LoginVC.swift in Sources */,
 				AD1BA7E02312F85400AF2F4F /* ShadowView.swift in Sources */,
+				ADFCD565231831160083C748 /* Group.swift in Sources */,
 				ADFCD5612317FCB40083C748 /* UserCell.swift in Sources */,
 				ADFCD55F2317F5F40083C748 /* CreateGroupVC.swift in Sources */,
 				AD6208A22312D32700134AB1 /* AppDelegate.swift in Sources */,
