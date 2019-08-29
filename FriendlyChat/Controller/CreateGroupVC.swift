@@ -13,10 +13,13 @@ class CreateGroupVC: UIViewController {
   @IBOutlet weak var titleTextField: InsertTextField!
   @IBOutlet weak var descriptionTextField: InsertTextField!
   @IBOutlet weak var emailSearchTextField: InsertTextField!
+  @IBOutlet weak var groupMemberLbl: UILabel!
+
   @IBOutlet weak var tableView: UITableView!
   @IBOutlet weak var doneButton: UIButton!
   
   var emailArray = [String]()
+  var chosenUserArray = [String]()
   
   override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +30,10 @@ class CreateGroupVC: UIViewController {
     emailSearchTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
     
     }
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(true)
+    doneButton.isHidden = true
+  }
   
   @objc func textFieldDidChange() {
     if emailSearchTextField.text == "" {
@@ -59,8 +66,30 @@ extension CreateGroupVC: UITableViewDelegate, UITableViewDataSource {
     
     let profileImage = UIImage(named: "defaultProfileImage")
     
-    cell.configureCell(profoleImage: profileImage!, email: emailArray[indexPath.row], isSelected: true)
+    if chosenUserArray.contains(emailArray[indexPath.row]) {
+      cell.configureCell(profoleImage: profileImage!, email: emailArray[indexPath.row], isSelected: true)
+    } else {
+      cell.configureCell(profoleImage: profileImage!, email: emailArray[indexPath.row], isSelected: false)
+
+    }
+    
     return cell
+  }
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    guard let cell = tableView.cellForRow(at: indexPath) as? UserCell else { return }
+    if !chosenUserArray.contains(cell.emailLabel.text!) {
+      chosenUserArray.append(cell.emailLabel.text!)
+      groupMemberLbl.text = chosenUserArray.joined(separator: ", ")
+      doneButton.isHidden = false
+    } else {
+      chosenUserArray = chosenUserArray.filter({ $0 != cell.emailLabel.text!})
+      if chosenUserArray.count >= 1 {
+        groupMemberLbl.text = chosenUserArray.joined(separator: ", ")
+      } else {
+        groupMemberLbl.text = "add people to your group"
+        doneButton.isHidden = true
+      }
+    }
   }
 }
 extension CreateGroupVC: UITextFieldDelegate {

@@ -90,6 +90,7 @@
 		AD1BA7DC2312ECF000AF2F4F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AD6208A72312D32700134AB1 /* Main.storyboard */,
 				AD1BA7DD2312ED2D00AF2F4F /* InsertTextField.swift */,
 				AD1BA7DF2312F85400AF2F4F /* ShadowView.swift */,
 				ADFCD55A231796510083C748 /* FeedCell.swift */,
@@ -125,7 +126,6 @@
 				AD6208B62312D38600134AB1 /* Model */,
 				AD6208B52312D37C00134AB1 /* Controller */,
 				AD6208A12312D32700134AB1 /* AppDelegate.swift */,
-				AD6208A72312D32700134AB1 /* Main.storyboard */,
 				AD6208AA2312D32800134AB1 /* Assets.xcassets */,
 				AD6208AC2312D32800134AB1 /* LaunchScreen.storyboard */,
 				AD6208AF2312D32800134AB1 /* Info.plist */,
