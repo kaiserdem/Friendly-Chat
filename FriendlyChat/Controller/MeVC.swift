@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class MeVC: UIViewController {
 
@@ -16,12 +17,30 @@ class MeVC: UIViewController {
   @IBOutlet weak var profileImage: UIImageView!
   
   @IBOutlet weak var tableView: UITableView!
+  
   override func viewDidLoad() {
         super.viewDidLoad()
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    self.emailLabel.text = Auth.auth().currentUser?.email
 
-        // Do any additional setup after loading the view.
-    }
+  }
     
   @IBAction func singInOutWasPressed(_ sender: Any) {
+    let loqoutPopup = UIAlertController(title: "Logout?", message: "Are you sure want to logout", preferredStyle: .actionSheet)
+    
+    let lououtAction = UIAlertAction(title: "Logout?", style: .destructive) { (buttonTapped) in
+      do {
+        try Auth.auth().signOut()
+        let authVC = self.storyboard?.instantiateViewController(withIdentifier: "AuthVC") as? AuthVC
+        self.present(authVC!, animated: true, completion: nil)
+      } catch {
+        print(error)
+      }
+    }
+    loqoutPopup.addAction(lououtAction)
+    present(loqoutPopup, animated: true, completion: nil)
   }
 }
