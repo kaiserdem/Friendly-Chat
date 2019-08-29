@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class CreateGroupVC: UIViewController {
 
@@ -14,7 +15,6 @@ class CreateGroupVC: UIViewController {
   @IBOutlet weak var descriptionTextField: InsertTextField!
   @IBOutlet weak var emailSearchTextField: InsertTextField!
   @IBOutlet weak var groupMemberLbl: UILabel!
-
   @IBOutlet weak var tableView: UITableView!
   @IBOutlet weak var doneButton: UIButton!
   
@@ -50,6 +50,20 @@ class CreateGroupVC: UIViewController {
     self.dismiss(animated: true, completion: nil)
   }
   @IBAction func doneBtnWasPressed(_ sender: Any) {
+    if titleTextField.text != "" && descriptionTextField.text != "" {
+      DataService.instance.getIds(forUserNames: chosenUserArray) { (idsArray) in
+        var userIds = idsArray
+        userIds.append((Auth.auth().currentUser?.uid)!)
+        
+        DataService.instance.createGroup(withTitle: self.titleTextField.text!, andDescription: self.descriptionTextField.text!, forUserIds: userIds, handler: { (groupCreated) in
+          if groupCreated {
+            self.dismiss(animated: true, completion: nil)
+          } else {
+            print("Group could not be created. Please try again.")
+          }
+        })
+      }
+    }
   }
   
 }
@@ -70,7 +84,6 @@ extension CreateGroupVC: UITableViewDelegate, UITableViewDataSource {
       cell.configureCell(profoleImage: profileImage!, email: emailArray[indexPath.row], isSelected: true)
     } else {
       cell.configureCell(profoleImage: profileImage!, email: emailArray[indexPath.row], isSelected: false)
-
     }
     
     return cell
