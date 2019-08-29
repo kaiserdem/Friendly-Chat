@@ -56,13 +56,53 @@
                                 <rect key="frame" x="0.0" y="70" width="375" height="548"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="T8y-rD-QGT">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="T8y-rD-QGT" customClass="FeedCell" customModule="FriendlyChat" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="T8y-rD-QGT" id="mvy-TS-ZPQ">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="sY6-YK-y2t">
+                                                    <rect key="frame" x="10" y="10" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="Bau-S1-zSv"/>
+                                                        <constraint firstAttribute="width" constant="50" id="KHi-46-h0S"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="79H-hM-COQ">
+                                                    <rect key="frame" x="70" y="10" width="295" height="79.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user@friendluChat.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iJO-Kh-l7J">
+                                                            <rect key="frame" x="0.0" y="0.0" width="295" height="37"/>
+                                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
+                                                            <color key="textColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Messege content" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="pBX-iZ-h4Z">
+                                                            <rect key="frame" x="0.0" y="43" width="295" height="36.5"/>
+                                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="12"/>
+                                                            <color key="textColor" red="0.015686274510000001" green="0.6705882353" blue="0.7725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.16078431372549018" green="0.16862745098039217" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="79H-hM-COQ" secondAttribute="bottom" constant="10" id="N5n-vZ-54D"/>
+                                                <constraint firstItem="79H-hM-COQ" firstAttribute="top" secondItem="mvy-TS-ZPQ" secondAttribute="top" constant="10" id="bHZ-9A-Kfd"/>
+                                                <constraint firstItem="79H-hM-COQ" firstAttribute="leading" secondItem="sY6-YK-y2t" secondAttribute="trailing" constant="10" id="mci-5O-NPq"/>
+                                                <constraint firstItem="sY6-YK-y2t" firstAttribute="leading" secondItem="mvy-TS-ZPQ" secondAttribute="leading" constant="10" id="mlo-If-COP"/>
+                                                <constraint firstAttribute="trailing" secondItem="79H-hM-COQ" secondAttribute="trailing" constant="10" id="uwh-lo-TE5"/>
+                                                <constraint firstItem="sY6-YK-y2t" firstAttribute="top" secondItem="mvy-TS-ZPQ" secondAttribute="top" constant="10" id="v32-ya-Xbl"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="contentLabel" destination="pBX-iZ-h4Z" id="Odz-aU-uJR"/>
+                                            <outlet property="emailLabel" destination="iJO-Kh-l7J" id="CJ4-zi-d72"/>
+                                            <outlet property="profileImage" destination="sY6-YK-y2t" id="RIh-jg-ijn"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

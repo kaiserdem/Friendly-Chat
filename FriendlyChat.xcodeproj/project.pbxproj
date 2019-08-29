@@ -24,6 +24,7 @@
 		AD6208AB2312D32800134AB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD6208AA2312D32800134AB1 /* Assets.xcassets */; };
 		AD6208AE2312D32800134AB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD6208AC2312D32800134AB1 /* LaunchScreen.storyboard */; };
 		AD6208BA2312D46E00134AB1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD6208B92312D46E00134AB1 /* GoogleService-Info.plist */; };
+		ADFCD55B231796510083C748 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFCD55A231796510083C748 /* FeedCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		AD6208AD2312D32800134AB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD6208AF2312D32800134AB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD6208B92312D46E00134AB1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ADFCD55A231796510083C748 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		B60BABC6E8D92AE0C202670A /* Pods-FriendlyChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendlyChat.debug.xcconfig"; path = "Target Support Files/Pods-FriendlyChat/Pods-FriendlyChat.debug.xcconfig"; sourceTree = "<group>"; };
 		BDC97E69F0BEEF0134CF456F /* Pods-FriendlyChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendlyChat.release.xcconfig"; path = "Target Support Files/Pods-FriendlyChat/Pods-FriendlyChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,6 +86,7 @@
 			children = (
 				AD1BA7DD2312ED2D00AF2F4F /* InsertTextField.swift */,
 				AD1BA7DF2312F85400AF2F4F /* ShadowView.swift */,
+				ADFCD55A231796510083C748 /* FeedCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD3ED1EA23131A4F00AAF679 /* MeVC.swift in Sources */,
+				ADFCD55B231796510083C748 /* FeedCell.swift in Sources */,
 				AD1BA7DE2312ED2D00AF2F4F /* InsertTextField.swift in Sources */,
 				AD1BA7D92312EBE400AF2F4F /* AuthVC.swift in Sources */,
 				AD6208A62312D32700134AB1 /* GroupsVC.swift in Sources */,
@@ -442,7 +446,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kaiserdem.NotificationsTest;
+				PRODUCT_BUNDLE_IDENTIFIER = kaiserdem.WeatherClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -461,7 +465,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = kaiserdem.NotificationsTest;
+				PRODUCT_BUNDLE_IDENTIFIER = kaiserdem.WeatherClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
