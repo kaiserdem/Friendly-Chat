@@ -27,6 +27,7 @@
 		ADFCD55B231796510083C748 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFCD55A231796510083C748 /* FeedCell.swift */; };
 		ADFCD55D23179A9D0083C748 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFCD55C23179A9D0083C748 /* Message.swift */; };
 		ADFCD55F2317F5F40083C748 /* CreateGroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFCD55E2317F5F40083C748 /* CreateGroupVC.swift */; };
+		ADFCD5612317FCB40083C748 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADFCD5602317FCB40083C748 /* UserCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		ADFCD55A231796510083C748 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		ADFCD55C23179A9D0083C748 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		ADFCD55E2317F5F40083C748 /* CreateGroupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupVC.swift; sourceTree = "<group>"; };
+		ADFCD5602317FCB40083C748 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		B60BABC6E8D92AE0C202670A /* Pods-FriendlyChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendlyChat.debug.xcconfig"; path = "Target Support Files/Pods-FriendlyChat/Pods-FriendlyChat.debug.xcconfig"; sourceTree = "<group>"; };
 		BDC97E69F0BEEF0134CF456F /* Pods-FriendlyChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FriendlyChat.release.xcconfig"; path = "Target Support Files/Pods-FriendlyChat/Pods-FriendlyChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +93,7 @@
 				AD1BA7DD2312ED2D00AF2F4F /* InsertTextField.swift */,
 				AD1BA7DF2312F85400AF2F4F /* ShadowView.swift */,
 				ADFCD55A231796510083C748 /* FeedCell.swift */,
+				ADFCD5602317FCB40083C748 /* UserCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				AD1BA7E22312FAA200AF2F4F /* AuthService.swift in Sources */,
 				AD1BA7DB2312EC8C00AF2F4F /* LoginVC.swift in Sources */,
 				AD1BA7E02312F85400AF2F4F /* ShadowView.swift in Sources */,
+				ADFCD5612317FCB40083C748 /* UserCell.swift in Sources */,
 				ADFCD55F2317F5F40083C748 /* CreateGroupVC.swift in Sources */,
 				AD6208A22312D32700134AB1 /* AppDelegate.swift in Sources */,
 				AD5D41112313B2A400C97F9E /* UiViewExt.swift in Sources */,

@@ -309,17 +309,55 @@
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HwJ-uX-mJF">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HwJ-uX-mJF">
                                         <rect key="frame" x="0.0" y="240" width="335" height="317"/>
                                         <color key="backgroundColor" name="liteBlackColor"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="0kZ-QK-hfF">
-                                                <rect key="frame" x="0.0" y="28" width="335" height="44"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="userCell" rowHeight="60" id="0kZ-QK-hfF" customClass="UserCell" customModule="FriendlyChat" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="335" height="60"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0kZ-QK-hfF" id="3Oi-rV-Bfw">
-                                                    <rect key="frame" x="0.0" y="0.0" width="335" height="44"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="335" height="60"/>
                                                     <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user@friedlyChat.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="R2x-Xg-l7E">
+                                                            <rect key="frame" x="64" y="11" width="236" height="38"/>
+                                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
+                                                            <color key="textColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiteCheckmark" translatesAutoresizingMaskIntoConstraints="NO" id="scv-9s-c8G">
+                                                            <rect key="frame" x="310" y="23" width="20" height="14"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="20" id="MRb-C7-psv"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="2m1-ta-8y2">
+                                                            <rect key="frame" x="10" y="8" width="44" height="44"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="44" id="8Dq-qA-jmD"/>
+                                                                <constraint firstAttribute="height" constant="44" id="CBV-4a-Hhu"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="scv-9s-c8G" firstAttribute="centerY" secondItem="R2x-Xg-l7E" secondAttribute="centerY" id="HHf-Ov-hL4"/>
+                                                        <constraint firstItem="R2x-Xg-l7E" firstAttribute="centerY" secondItem="2m1-ta-8y2" secondAttribute="centerY" id="Oe8-4q-bSz"/>
+                                                        <constraint firstItem="R2x-Xg-l7E" firstAttribute="top" secondItem="3Oi-rV-Bfw" secondAttribute="topMargin" id="PBh-YC-Zx2"/>
+                                                        <constraint firstItem="scv-9s-c8G" firstAttribute="leading" secondItem="R2x-Xg-l7E" secondAttribute="trailing" constant="10" id="TRr-tO-npj"/>
+                                                        <constraint firstItem="2m1-ta-8y2" firstAttribute="centerY" secondItem="3Oi-rV-Bfw" secondAttribute="centerY" id="Xgd-RG-vJN"/>
+                                                        <constraint firstItem="R2x-Xg-l7E" firstAttribute="leading" secondItem="2m1-ta-8y2" secondAttribute="trailing" constant="10" id="dTi-B2-P4v"/>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="R2x-Xg-l7E" secondAttribute="bottom" id="fxx-St-GrV"/>
+                                                        <constraint firstItem="scv-9s-c8G" firstAttribute="trailing" secondItem="3Oi-rV-Bfw" secondAttribute="trailingMargin" constant="10" id="jEH-De-OH3"/>
+                                                        <constraint firstItem="2m1-ta-8y2" firstAttribute="leading" secondItem="3Oi-rV-Bfw" secondAttribute="leading" constant="10" id="t1p-vW-iPz"/>
+                                                    </constraints>
                                                 </tableViewCellContentView>
+                                                <color key="backgroundColor" name="liteBlackColor"/>
+                                                <connections>
+                                                    <outlet property="checkImage" destination="scv-9s-c8G" id="U9P-OJ-1fC"/>
+                                                    <outlet property="emailLabel" destination="R2x-Xg-l7E" id="mFD-Wz-rmF"/>
+                                                    <outlet property="profileImage" destination="2m1-ta-8y2" id="B7Z-Mk-XVm"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
@@ -341,7 +379,7 @@
                     <connections>
                         <outlet property="descriptionTextField" destination="6W5-5h-Cma" id="EBc-Ai-azk"/>
                         <outlet property="doneButton" destination="K3U-84-ZUx" id="o79-9L-lUf"/>
-                        <outlet property="emailSearch" destination="wHK-R5-zbv" id="h9m-XR-hB0"/>
+                        <outlet property="emailSearchTextField" destination="wHK-R5-zbv" id="v4m-DQ-fr8"/>
                         <outlet property="tableView" destination="HwJ-uX-mJF" id="GBX-DN-yp6"/>
                         <outlet property="titleTextField" destination="jM0-c0-KlC" id="1nn-72-VLj"/>
                     </connections>
@@ -803,6 +841,7 @@
         <image name="logoutIcon" width="19" height="21"/>
         <image name="me-tabIcon" width="25" height="25"/>
         <image name="send" width="29" height="29"/>
+        <image name="whiteCheckmark" width="18" height="14"/>
         <namedColor name="grayForBar">
             <color red="0.25490196078431371" green="0.27058823529411763" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
