@@ -251,7 +251,7 @@
         <!--Group FeedVC-->
         <scene sceneID="09T-nd-ES0">
             <objects>
-                <viewController id="BIJ-V4-w6U" customClass="GroupFeedVC" customModule="FriendlyChat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="groupFeedVC" id="BIJ-V4-w6U" customClass="GroupFeedVC" customModule="FriendlyChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3hj-Xe-6KA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
