@@ -291,10 +291,10 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yke-Ao-z8E">
-                                <rect key="frame" x="0.0" y="103" width="375" height="564"/>
+                                <rect key="frame" x="0.0" y="103" width="375" height="504"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="feedCell" rowHeight="100" id="8qc-oM-9WB" customClass="GroupFeedCell" customModule="FriendlyChat" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="groupFeedCell" rowHeight="100" id="8qc-oM-9WB" customClass="GroupFeedCell" customModule="FriendlyChat" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8qc-oM-9WB" id="JO4-wL-cJd">
@@ -344,7 +344,7 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user@friendliChat.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ExR-P0-Gh9">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user@friendliChat.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="ExR-P0-Gh9">
                                 <rect key="frame" x="8" y="78" width="359" height="17"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="14"/>
                                 <color key="textColor" red="0.56078431370000004" green="0.81176470590000005" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -386,6 +386,7 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Vat-wC-W6y" firstAttribute="top" secondItem="yke-Ao-z8E" secondAttribute="bottom" id="1GE-FG-kYT"/>
                             <constraint firstItem="3B0-VU-Umc" firstAttribute="trailing" secondItem="wMU-ZJ-abt" secondAttribute="trailing" id="9lE-Mt-IiO"/>
                             <constraint firstItem="Vat-wC-W6y" firstAttribute="leading" secondItem="wMU-ZJ-abt" secondAttribute="leading" id="BHy-Yh-Y5Y"/>
                             <constraint firstItem="yke-Ao-z8E" firstAttribute="leading" secondItem="wMU-ZJ-abt" secondAttribute="leading" id="R69-QA-C3h"/>
@@ -394,7 +395,6 @@
                             <constraint firstItem="ExR-P0-Gh9" firstAttribute="leading" secondItem="wMU-ZJ-abt" secondAttribute="leading" constant="8" id="h67-8k-b59"/>
                             <constraint firstItem="ExR-P0-Gh9" firstAttribute="top" secondItem="3B0-VU-Umc" secondAttribute="bottom" constant="8" id="jVT-Sb-duS"/>
                             <constraint firstItem="Vat-wC-W6y" firstAttribute="bottom" secondItem="wMU-ZJ-abt" secondAttribute="bottom" id="neC-Wc-OPP"/>
-                            <constraint firstAttribute="bottom" secondItem="yke-Ao-z8E" secondAttribute="bottom" id="st4-XW-H9f"/>
                             <constraint firstItem="wMU-ZJ-abt" firstAttribute="trailing" secondItem="ExR-P0-Gh9" secondAttribute="trailing" constant="8" id="tdz-gp-ojE"/>
                             <constraint firstItem="3B0-VU-Umc" firstAttribute="leading" secondItem="wMU-ZJ-abt" secondAttribute="leading" id="vEc-RB-wSF"/>
                             <constraint firstItem="yke-Ao-z8E" firstAttribute="trailing" secondItem="wMU-ZJ-abt" secondAttribute="trailing" id="vkL-4e-rVk"/>
